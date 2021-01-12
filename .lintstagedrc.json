@@ -1,3 +1,5 @@
 {
-  "*.ts": []
+  "*.ts": [
+    "yarn run test:staged"
+  ]
 }
