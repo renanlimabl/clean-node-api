@@ -39,11 +39,16 @@ export class SignUpController implements Controller {
       }
 
       // Add Account
-      this.addAccount.add({
+      const account = this.addAccount.add({
         name,
         email,
         password,
       });
+
+      return {
+        statusCode: 200,
+        body: account,
+      };
     } catch (error) {
       return serverError();
     }
